@@ -1,0 +1,17 @@
+package excelr;
+
+public class HelloWorld 
+{
+	//non-static variables of class HelloWorld
+	int id;
+	String name;
+	int age;
+	double salary;
+	boolean status;
+	
+	public static void main(String[] args)
+	{
+		System.out.println("Hello World!");
+	}
+
+}
