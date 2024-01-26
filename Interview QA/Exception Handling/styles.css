@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Poppins&family=Roboto:wght@700&display=swap');
+*
+{
+    margin: 10px;
+    padding: 0;
+}
+
+:root
+{
+    --conceptFont: font-family: 'Oswald', sans-serif;
+    --questionFont: 'Poppins', sans-serif;
+    --answerFont: font-family: 'Roboto', sans-serif;
+}
+
+
+
+b, strong 
+{
+    display: inline-block;
+    margin: 0;
+}
+
+
+.concept
+{
+    font-size: 40px;
+    color: red;
+    font-family: var(--conceptFont);
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+h1
+{
+    font-size: 20px;
+    color: red;
+    font-family: var(--questionFont);
+    padding-bottom: 10px;
+    text-align: justify;
+}
+p
+{
+    font-size: 18px;
+    font-family: var(--answerFont);
+    text-align: justify;
+    margin-left: 30px;
+}
+
+.snippet
+{
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: gainsboro;
+    color: #333;
+    border: 1px solid black;
+}
+
+.sub-heading
+{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: var(--answerFont);
+    text-align: justify;
+    margin-left: 30px;
+}
+

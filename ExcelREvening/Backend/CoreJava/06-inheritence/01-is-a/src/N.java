@@ -10,6 +10,7 @@ class N extends M
 {
 	N()
 	{
+		//super
 		System.out.println("N()");
 	}
 	public static void main(String[] args) 

@@ -1,0 +1,3 @@
+class GrandFather extends Ancestor 
+{
+}

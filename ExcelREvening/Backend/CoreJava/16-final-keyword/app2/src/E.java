@@ -1,0 +1,4 @@
+interface E
+{
+	int i;
+}

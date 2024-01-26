@@ -1,0 +1,6 @@
+interface G
+{
+	void test()
+	{
+	}
+}

@@ -1,0 +1,20 @@
+Java Commands
+-------------
+
+" cd [change directory] "
+
+" cd e:\ [right now we are in C: drive. Let's open "E" drive. This is the command], if we have same "C" drive, type e: or E: "
+
+" If we want open one folder to multiple folder;
+
+cd folder1/folder2/ ["/" - every folder we can give correct name with "/". If we can open no. of folder's] "
+
+" If we want back to main folder;
+
+cd ../../../ ["../" - one folder back. If we want 10 folder's back, we can add ../ one more] "
+
+" javac File.java ["c-compiler", compile command] or javac -d ../classes File.java ["-d" - directory, (It is going to intract with the file system).store] " 
+
+" java File [run command] or java -cp ../classes File ["-cp" - class path (we are specifying the location of the class files)] "
+
+clear command - "cls"
