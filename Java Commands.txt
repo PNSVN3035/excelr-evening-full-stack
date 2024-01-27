@@ -17,4 +17,9 @@ cd ../../../ ["../" - one folder back. If we want 10 folder's back, we can add .
 
 " java File [run command] or java -cp ../classes File ["-cp" - class path (we are specifying the location of the class files)] "
 
-clear command - "cls"
+" clear command - "cls" "
+
+" java -cp ../classes -ea pack1.A ["-ea" - enable asserstion] "
+
+" java -cp ../classes -da pack1.A ["-ea" - disable asserstion] "
+
