@@ -3,7 +3,7 @@ class Z
 	@SuppressWarnings("removal")
 	public static void main(String[] args) 
 	{
-		String str = "10.0";
+		String str = "10.0f";
 		float f = Float.parseFloat(str);
 		System.out.println(f);
 		System.out.println("----------");

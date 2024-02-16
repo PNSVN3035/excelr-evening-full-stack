@@ -5,7 +5,7 @@ class T
 	{
 		String s1 = "90.9";
 
-		Double d1 = Double.valueOf(s1);//new Double("90.9");
+		Double d1 = Double.valueOf(s1);//new Double(s1);
 		double d2 = d1.doubleValue();
 
 		System.out.println(d2);

@@ -2,7 +2,7 @@ class M
 {
 	public static void main(String[] args) 
 	{
-		String s1 = "10.235F";
+		String s1 = "10.235f";
 
 		Float obj1 = new Float(s1);
 	

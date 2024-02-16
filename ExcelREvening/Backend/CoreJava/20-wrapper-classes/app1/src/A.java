@@ -7,14 +7,13 @@ class A
 		Integer obj = new Integer(i);//explicit-boxing
 		int k = obj.intValue();//explicit-unboxing
 		System.out.println(k);
-		System.out.println("done done");
-		String s1 = Integer.toString(10);
-		String s2 = Float.toString(10.0f);
-		String s3 = Boolean.toString(true);
-		System.out.println(s1);
-		System.out.println(s2);
-		System.out.println(s3);
-
+		System.out.println("done");
+		//String s1 = Integer.toString(10);
+		//String s2 = Float.toString(10.0f);
+		//String s3 = Boolean.toString(true);
+		//System.out.println(s1);
+		//System.out.println(s2);
+		//System.out.println(s3);
 	}
 }
 
