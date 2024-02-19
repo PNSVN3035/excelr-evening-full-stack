@@ -23,3 +23,29 @@ cd ../../../ ["../" - one folder back. If we want 10 folder's back, we can add .
 
 " java -cp ../classes -da pack1.A ["-ea" - disable asserstion] "
 
+--------
+String:-
+--------
+
+------------------------------
+StringBuffer & StringBuilder:-
+------------------------------
+
+---------------
+Multi Threads:-
+---------------
+
+--------------
+Object Class:-
+--------------
+
+----------
+Generics:-
+----------
+
+----------------
+Collection API:-
+----------------
+
+***********************************
+
