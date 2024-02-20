@@ -23,29 +23,72 @@ cd ../../../ ["../" - one folder back. If we want 10 folder's back, we can add .
 
 " java -cp ../classes -da pack1.A ["-ea" - disable asserstion] "
 
+
+-----------------
+Wrapper Classes:-
+-----------------
+- In each and every Wrapper classes hashCode() & equals() method got overrided.
+
+**************************
 --------
 String:-
 --------
+- In String class toString() method of object class got overrided.
 
+- In String class equals() method got overrided for content comparision.
+
+- In String class hashCode() method got overrided.
+
+***************************************
 ------------------------------
 StringBuffer & StringBuilder:-
 ------------------------------
+- String can't be converted to StringBuffer.
 
+- In StringBuffer complusory we must use "new" operator, while creating the StringBuffer object.
+
+- In StringBuffer & StringBuilder toString() method got overrided.
+
+- In StringBuffer & StringBuilder equals() & hashCode() method not overrided.
+
+
+****************************
 ---------------
 Multi Threads:-
 ---------------
 
+************************************
 --------------
 Object Class:-
 --------------
 
+**************************
 ----------
 Generics:-
 ----------
 
+****************************
 ----------------
 Collection API:-
 ----------------
+- All the collection Framework Classes Qualified for using the Generics.
+
+- Whenever we are creating an object to any of the Collection class without using Generic type will get warnings [Unchecked or Unsafe Operations].
+
+- If there is a frequent reading operation is there then you could use ArrayList.
+
+- If there is a frequent add or remove operation is there then you could use LinkedList.
+
+- Wherever sorting is there must be same type. Otherwise will get Exception.
+
+- Assume that we have requirement to sort the elements of HashSet, then go for TreeSet[In TreeSet we have addAll()]
+
 
 ***********************************
 
+---------------
+Inner Classes:-
+---------------
+- Outer class can't be a static.
+
+******************
