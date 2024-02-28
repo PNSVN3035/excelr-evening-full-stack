@@ -10,16 +10,15 @@ class M1
 		/*
 		A a1 = new A()
 		{
-			public void test()
+			public void test1()
 			{
 				System.out.println("from test AIC");
 			}
 		};
-		a1.test();
-		System.out.println("--------------");
+		a1.test1();
+		System.out.println("--------------");		
 		*/
-		
-		
+
 		A a2 = () -> System.out.println("from test from LE");
 		a2.test1();
 		//a2.test2();
