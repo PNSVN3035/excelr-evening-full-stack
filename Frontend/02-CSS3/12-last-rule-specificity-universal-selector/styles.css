@@ -1,0 +1,48 @@
+/* Last Rule and Specificity * Universal Selector */
+/* class vs element == class */
+/* 1. ID
+   2. class
+   3. element
+   4. inheritance
+   5. universal - last  */
+
+   .special
+   {
+       color: green;
+   }
+   
+   p
+   {
+       color: red;
+   }
+   
+   p 
+   {
+       color: blue;
+   }
+   
+   #heading 
+   {
+       color: red;
+   }
+   
+   .heading 
+   {
+       color: green;
+   }
+   
+   * 
+   {
+       color: brown;
+   }
+     
+   h4
+   {
+       color: aqua;
+   }
+   
+   #hello
+   {
+       color: blue;
+   }
+   

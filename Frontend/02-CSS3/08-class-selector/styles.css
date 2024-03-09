@@ -1,0 +1,11 @@
+.headings
+{
+    color: red;
+    text-transform: uppercase;
+}
+
+.paragraphs
+{
+    color: blue;
+    text-decoration: underline;
+}

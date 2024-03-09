@@ -1,0 +1,29 @@
+/* Div and Span */
+.green
+{
+    color: green;
+    background: yellow;
+}
+
+.red
+{
+    color: red;
+    background: black;
+}
+
+.uppercase
+{
+    text-transform: uppercase;
+}
+
+.text
+{
+    background: white;
+    color: blue;
+}
+
+.white
+{
+    color: white;
+    background: black;
+}

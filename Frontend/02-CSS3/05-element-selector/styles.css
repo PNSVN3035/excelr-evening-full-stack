@@ -1,0 +1,14 @@
+/* element selector */
+h1
+{
+    color: red;
+}
+p
+{
+    color: blue;
+}
+img
+{
+    border: 2px solid red;
+    width: 400px;
+}
