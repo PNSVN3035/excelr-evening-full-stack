@@ -1,0 +1,21 @@
+/* here we are over riding the default browser style */
+html
+{
+    font-size: 32px;
+}
+
+div
+{
+    font-size: 5px;
+}
+
+.absolute
+{
+    font-size: 32px;
+}
+
+/* rem is not refering immediate parent (div). It is refering from root (html). Means that the default browser style is 16px.*/
+.relative
+{
+    font-size: 2rem;
+}

@@ -1,0 +1,11 @@
+/* FONT-SIZE - specifies size of the font
+WIDTH - width of the element
+HEIGHT - height of the element  */
+h1
+{
+    font-size: 60px;
+    background: blue;
+    color: white;
+    width: 1000px;
+    height: 800px;
+}

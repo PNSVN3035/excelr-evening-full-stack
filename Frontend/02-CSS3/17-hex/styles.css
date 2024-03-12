@@ -1,0 +1,25 @@
+/* Hex Values #RRGGBB 
+In background: '000' this is shorthand value. other 000 will be automatically applied */
+#first
+{
+    color: #ff0000;
+    background: #000;
+}
+
+#second
+{
+    color: #fff;
+    background: #00ff00;
+}
+
+#three
+{
+    color: #0000ff;
+    background: #f15025;
+}
+
+#four
+{
+    color: #f234ad;
+    background: #222;
+}
