@@ -1,0 +1,44 @@
+/* 
+CSS BOX MODEL
+*/
+h1, p 
+{
+  color: white;
+}
+
+h1
+{
+   background: red;
+   padding-top: 40px;
+   padding-right: 40px;
+   padding-bottom: 40px;
+   padding-left: 40px;
+}
+
+.one
+{
+    background: blue;
+     /* all sides */
+    padding: 40px;
+}
+
+.two
+{
+   background: black;
+   /* top, bottom and left, right */
+   padding: 40px 20px;
+}
+
+.three
+{
+   background: yellowgreen;
+   /* top and left and right and bottom */
+   padding: 40px 20px 50px 60px;
+}
+
+.four
+{
+  background: burlywood;
+  /* top and left and right and bottom */
+  padding: 200px 150px 30px;
+}

@@ -1,0 +1,29 @@
+/* 
+CSS BOX MODEL, PADDING, MARGIN, BORDER
+*/
+
+*
+{
+  margin: 0;
+}
+
+h1,
+p
+{
+  color: white;
+}
+
+h1
+{
+  background: red;
+  padding: 20px;
+  /* width: 100vw; */
+  margin: 3rem;
+}
+
+p
+{
+  background: blue; 
+  padding: 20px;
+  margin: 3rem 3rem;
+}

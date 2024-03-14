@@ -1,0 +1,24 @@
+/* 
+text-align, text-indent
+*/
+body 
+{
+    background: black;
+    color: white;
+    font-family: sans-serif;
+    text-align: right;
+    text-align: left;
+    text-align: center;
+}
+
+.two
+{
+    text-align: left;
+    text-indent: 6rem;
+}
+
+.sub-heading
+{
+    text-align: left;
+    text-indent: 6rem;
+}

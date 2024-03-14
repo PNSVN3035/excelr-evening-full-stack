@@ -1,0 +1,61 @@
+/* 
+CSS BOX MODEL, PADDING, MARGIN, BORDER
+*/
+
+*
+{
+  margin: 0;
+}
+
+h1,
+p 
+{
+  color: white;
+}
+
+h1
+{
+  background: red;
+  padding: 20px;
+  margin: 3rem;  
+  border-style: solid;
+  border-width: 20px;
+  border-color: black;
+}
+
+.one
+{
+  background: blue;
+  padding: 20px;
+  margin: 3rem;  
+  border-top-color: red;
+  border-bottom-color: green;
+  border-left-color: black;
+  border-right-color: aqua;
+  border-top-width: 10px;
+  border-bottom-width: 10px;
+  border-right-width: 20px;
+  border-left-width: 20px;
+  border-top-style: dashed;
+  border-bottom-style: dashed;
+  border-left-style: dotted;
+  border-right-style: dotted;
+}
+
+.two
+{
+  background: black;
+  padding: 20px;
+  margin: 3rem;  
+  border-color: brown;
+  border-width: 20px;
+  border-style: solid;
+}
+
+.three
+{
+  background: yellowgreen;
+  padding: 20px;
+  margin: 3rem;  
+  border: 10px dashed blueviolet;
+}

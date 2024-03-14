@@ -1,0 +1,27 @@
+*
+{
+    margin: 0;
+}
+/* 100 means entire screen. if we go 50 off of the screen will get. */
+.orange
+{
+    background: orange;
+    height: 33.33vh;
+    width: 100vw;
+}
+
+.white
+{
+    background: white;
+    height: 33.33vh;
+    width: 100vw;
+}
+
+.green
+{
+    background: green;
+    height: 33.33vh;
+    width: 100vw;
+}
+
+
