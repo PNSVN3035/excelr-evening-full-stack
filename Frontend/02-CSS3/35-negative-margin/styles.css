@@ -1,0 +1,54 @@
+/* negative margin */
+.container
+{
+  padding: 20px;
+  background: gainsboro;
+  width: 800px;
+  height: 500px;
+}
+
+.layer
+{
+  width: 250px;
+  height: 300px;
+  background: rgba(0, 0, 255, 0.63);
+}
+
+.layer2
+{
+  margin-left: 70px;
+  margin-top: -260px;
+}
+
+.layer3
+{
+  margin-left: 140px;
+  margin-top: -260px;
+}
+
+.container2
+{
+  padding: 20px;
+  background: gainsboro;
+  width: 800px;
+  height: 500px;
+}
+
+.layer10
+{
+  margin-left: 550px;
+}
+
+.layer20
+{
+  margin-top: -250px;
+  margin-left: 500px;
+}
+
+.layer30
+{
+  margin-top: -250px;
+  margin-left: 450px;
+  
+}
+

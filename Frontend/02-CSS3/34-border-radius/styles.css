@@ -1,0 +1,25 @@
+/* 
+BORDER-RADIUS 
+*/
+
+h1,
+p 
+{
+  color: white;
+}
+
+h1
+{
+  background: red;
+  padding: 10px;
+  border: 15px solid black;
+  border-radius: 25px;
+}
+
+p
+{
+  background: blue;
+  padding: 15px;
+  border: 7px dotted green;
+  border-radius: 30px;
+}
