@@ -1,0 +1,47 @@
+div
+{
+    height: 300px;
+    color: white;
+}
+.big-img
+{
+    background: url('./img/big.jpeg');
+    background-repeat: repeat;
+    background-repeat: no-repeat;
+}
+
+.small-img
+{
+    background: url('./img/small.jpeg');
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: space;
+    background-repeat: round;
+    /* background-repeat: repeat; */
+    /* margin-top: 0.5rem;
+    margin-bottom: 0.5rem; */
+    /* margin: 4rem; */
+    height: 70px;
+}
+
+.small-img2
+{
+    background: url('./img/small.jpeg');
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: space;
+    background-repeat: round;
+    /* background-repeat: repeat; */
+    /* margin-top: 0.5rem;
+    margin-bottom: 0.5rem; */
+    /* margin: 4rem; */
+    height: 70px;
+}
+
+.folder-img
+{
+    background: url("./img/folder-img.jpeg");
+    background-repeat: no-repeat;
+}

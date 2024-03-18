@@ -1,0 +1,35 @@
+div
+{
+    height: 300px;
+    color: white;
+    border: 2px solid black;
+    margin: 2rem;
+}
+
+.big-img
+{
+    background: url('./img/big.jpeg');
+    background-repeat: repeat;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+
+.small-img
+{
+    background: url('./img/small.jpeg');
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: space;
+    background-repeat: round;
+    background-repeat: space repeat;
+    background-size: cover;
+}
+
+.folder-img
+{
+    background: url("./img/folder-img.jpeg");
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+    /* background-size: cover; */
+}

@@ -1,26 +1,50 @@
-*
+/* 
+ BLOCK:browser respects width/height, top/bottom margin
+ INLINE:browser does not respect width/height, 
+ top/bottom margin
+ Navbar
+list-style-type:property
+descendant selectors
+*/
+* 
 {
-    margin: 0;
-    padding: 0;
-}
-
+  margin: 0;
+  padding: 0;
+} 
 body
 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 ul li
 {
-    list-style-type: none;
+  list-style-type: none;
 }
 
-ul li a
+
+ul li a 
 {
-    color: #f15025;
-    text-decoration: none;
-    letter-spacing: 2px;
-    background: #222;
-    display: block;
-    padding: 5px;
-    width: 150px;
+  color: #f15025;
+  text-decoration: none;
+  letter-spacing: 2px;
+  background: #222;
+  display: block;
+  /* padding: 5px; */
+  width: 150px;
+  /* height: 200px;  */
+  /* margin: 16rem; */
+  padding: 10px;
 }
+
+.one
+{
+  width: 250px;
+  height: 250px;
+  color: white;
+  background: black;
+  margin-top: 40rem;
+  margin-bottom: 40rem;
+  /* margin-left: 4rem;
+  margin-right: 77rem; */
+}
+
