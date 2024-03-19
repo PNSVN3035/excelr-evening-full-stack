@@ -1,0 +1,38 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div
+{
+    min-height: 100vh;
+    color: black;
+    border: 2px solid red;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.big-img
+{
+    background-image: url('./big.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.folder-img
+{
+    background: url('./folder-img.jpeg') center/cover fixed no-repeat;
+}
+
+.small-img
+{
+    background: url('./small.jpeg') center/cover fixed no-repeat;
+}

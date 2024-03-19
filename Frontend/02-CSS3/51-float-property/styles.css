@@ -1,0 +1,42 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner
+{
+    margin-top: 2px;
+    border: 5px solid red;
+    padding: 10px;
+    width: 100vw;
+    height: 50vh;
+}
+
+.one
+{
+    float: left;
+    /* float: right; */
+    width: 200px;
+}
+
+.two
+{
+    float: right;
+    width: 300px;
+}
+
+.p1
+{
+    /* clear: both; */
+}
+
+.three
+{
+    float: right;
+}
+
+.p2
+{
+    clear: left;
+}
