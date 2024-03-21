@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <style>
+      .banner {
+        width: 30vw;
+        margin: 100px auto;
+        border: 5px solid black;
+        position: relative;
+        z-index: -3;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      div::before {
+        content: "BEFORE";
+        /* border: 5px solid grey; */
+        color: black;
+        background: gray;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        box-sizing: border-box;
+        top: -60px;
+        left: -60px;
+        z-index: -2;
+      }
+      div::after {
+        content: "AFTER";
+        color: black;
+        /* border: 5px solid blue; */
+        background: blue;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        box-sizing: border-box;
+        top: -40px;
+        left: -40px;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <img src="./big.jpeg" alt="big" />
+    </div>
+  </body>
+</html>

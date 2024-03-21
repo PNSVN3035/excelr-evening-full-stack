@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <style>
+      /*  default is display is inline  */
+      p::before {
+        content: "ADDED BEFORE ";
+        display: block;
+        font-weight: bold;
+        font-size: 2rem;
+        background: red;
+      }
+      p::after {
+        content: " ADDED AFTER";
+        display: block;
+        font-weight: bold;
+        color: white;
+        font-size: 2rem;
+        background: black;
+      }
+    </style>
+  </head>
+  <body>
+    <p>before and after pseudo elements</p>
+  </body>
+</html>
+
+<!-- 
+
+    - Pseudo-elements ::before and ::after in CSS allow you to insert content into a document dynamically. 
+    - ::before and ::after content not element
+    - content: "" is required
+    - img doesnt work
+    - They are used to add decorative elements, such as icons, or to style specific parts of an element without having to modify the HTML structure. 
+ -->
