@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Tutorial</title>
+    <style>
+      .ancestor {
+        margin: 1rem;
+        width: 600px;
+        height: 600px;
+        border: 8px solid black;
+      }
+      .grand-parent {
+        margin: 1rem;
+        width: 500px;
+        height: 500px;
+        border: 8px solid green;
+      }
+      .parent {
+        margin: 1rem;
+        width: 400px;
+        height: 400px;
+        border: 8px solid gold;
+      }
+      .child {
+        margin: 1rem;
+        width: 300px;
+        height: 300px;
+        border: 8px solid blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ancestor">
+      <div class="grand-parent">
+        <div class="parent">
+          <div class="child"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

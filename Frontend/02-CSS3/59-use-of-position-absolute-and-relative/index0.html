@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Tutorial</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      img {
+        width: 150px;
+        height: 150px;
+      }
+      span {
+        font-size: 4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./small.jpeg" class="one" alt="small" />
+    <img src="./big.jpeg" class="two" alt="big" />
+    <img src="./folder-img.jpeg" class="three" alt="folder-img" />
+    <span>hello</span><span>welcome</span>
+  </body>
+</html>
+
+<!--  
+	-all the images are placed in its normal flow of the document
+    -we declared position: absolute
+  -->
+<!-- 
+
+  - all the images are stacked on top of one another.
+  - because they are positioned absolutely without specifying their individual positions. (top, bottom, left, right)
+  - they will all positioned default to the top left corner of the nearest positioned ancestor, or the initial containing block if there is none.
+  - there is no parent container with a specified position
+  - if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+  - Absolute positioned elements are removed from the normal flow, and can overlap elements.
+-->

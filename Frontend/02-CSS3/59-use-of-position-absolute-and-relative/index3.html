@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Tutorial</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      img {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        left: 4rem;
+        border: 2px solid black;
+      }
+      .one {
+        top: 2rem;
+      }
+      .two {
+        top: 8rem;
+      }
+      .three {
+        top: 15rem;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./small.jpeg" class="one" alt="" />
+    <img src="./big.jpeg" class="two" alt="" />
+    <img src="./folder-img.jpeg" class="three" alt="" />
+  </body>
+</html>
+
+<!-- 
+
+  - all the images are stacked on top of one another.
+  - all the images are given the left: 4rem
+  - they are positioned absolutely without specifying their individual positions. (top, bottom, left, right)
+  - there is no parent container with a specified position
+  - images are positioned relative to the <body> element, which is the initial containing block in this case. 
+-->

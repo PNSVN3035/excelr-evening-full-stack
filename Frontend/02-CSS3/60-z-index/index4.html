@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Tutorial</title>
+    <style>
+      img {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        border: 5px solid black;
+      }
+      .banner {
+        margin: 40px;
+        width: 80vw;
+        height: 70vh;
+        border: 5px solid green;
+        position: relative;
+      }
+      .one {
+        top: 1rem;
+        left: 1rem;
+        z-index: 3;
+      }
+      .two {
+        top: 4rem;
+        left: 4rem;
+        z-index: 2;
+      }
+      .three {
+        top: 8rem;
+        left: 8rem;
+        z-index: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <img src="./small.jpeg" class="one" alt="" />
+      <img src="./big.jpeg" class="two" alt="" />
+      <img src="./folder-img.jpeg" class="three" alt="" />
+    </div>
+  </body>
+</html>
+
+<!-- 
+- The z-index property in CSS controls the stacking order of positioned elements. 
+- When elements overlap, the element with a higher z-index value will be placed in front of elements with lower z-index values. 
+- If two elements have the same z-index, the one that comes later in the HTML document order will be displayed on top.
+ -->
+
+<!-- 
+
+  - all the images are stacked on top of one another 
+  - each image absolutely positioned within its containing block
+  - which in this case is the .banner div.
+  - the images are positioned inside the .banner div 
+  - The .banner div is given a position: relative; CSS property. This means that it becomes a positioned element, establishing a new positioning context for its absolutely positioned children (the <img> elements).
+  - Each <img> element has a position: absolute; CSS property, which positions the images absolutely within the nearest positioned ancestor, which in this case is the .banner div.
+  - The positioning of each image is defined by the .one, .two, and .three classes, which specify the distance from the top-left corner of the .banner div using the top and left properties.
+  - even though the images are positioned absolutely, they are contained within the boundaries of the .banner div because it is their closest positioned ancestor, and their absolute positioning is calculated relative to this container.
+-->

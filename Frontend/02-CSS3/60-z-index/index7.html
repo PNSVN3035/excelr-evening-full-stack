@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Tutorial</title>
+    <style>
+      img {
+        width: 150px;
+        height: 150px;
+        border: 5px solid black;
+        position: absolute;
+      }
+      .banner {
+        margin: 40px;
+        width: 80vw;
+        height: 70vh;
+        border: 5px solid green;
+        position: relative;
+      }
+      .one {
+        top: 1rem;
+        left: 1rem;
+        z-index: 1; /* Forming a stacking context */
+      }
+      .two {
+        top: 4rem;
+        left: 4rem;
+        z-index: 2; /* Forming a stacking context */
+      }
+      .three {
+        top: 8rem;
+        left: 8rem;
+        z-index: 3; /* Forming a stacking context */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <img src="./small.jpeg" class="one" alt="" />
+      <img src="./big.jpeg" class="two" alt="" />
+      <img src="./folder-img.jpeg" class="three" alt="" />
+    </div>
+  </body>
+</html>
+
+<!-- 
+  Stacking Contexts:
+-  Each positioned element with a z-index value other than auto forms a stacking context. Elements within a stacking context are stacked relative to each other, rather than all elements on the page. 
+- To create stacking contexts for each image, we'll assign non-auto z-index values to each image. This will ensure that each image forms its own stacking context, and elements within each stacking context will be stacked relative to each other, rather than all elements on the page.
+- z-index Values: Each image (.one, .two, .three) now has a non-auto z-index value. This ensures that each image forms its own stacking context.
+- Stacking Contexts: By assigning non-auto z-index values to each image, we ensure that each image forms a stacking context. Elements within each stacking context are stacked relative to each other, rather than all elements on the page.
+- Stacking Order: The stacking order of the images will now be determined by their z-index values within their respective stacking contexts. Images with higher z-index values will be positioned in front of images with lower z-index values within the same stacking context.
+-->
+
+<!-- 
+    - When z-index is set to auto, the stacking order is determined by the order of elements in the HTML document and their respective stacking contexts.
+    - Since no z-index values are explicitly specified, the browser will assign default z-index values based on the order of elements in the HTML document, with the last element being the topmost in the stacking order.
+
+ -->
+<!-- 
+  z-index and Positioning:
+  z-index works only on positioned elements (those with position: relative, position: absolute, position: fixed, or position: sticky). If an element isn't positioned, z-index will have no effect.
+ -->
+<!-- 
+- The z-index property in CSS controls the stacking order of positioned elements. 
+- When elements overlap, the element with a higher z-index value will be placed in front of elements with lower z-index values. 
+- If two elements have the same z-index, the one that comes later in the HTML document order will be displayed on top.
+ -->
+
+<!-- 
+
+  - all the images are stacked on top of one another 
+  - each image absolutely positioned within its containing block
+  - which in this case is the .banner div.
+  - the images are positioned inside the .banner div 
+  - The .banner div is given a position: relative; CSS property. This means that it becomes a positioned element, establishing a new positioning context for its absolutely positioned children (the <img> elements).
+  - Each <img> element has a position: absolute; CSS property, which positions the images absolutely within the nearest positioned ancestor, which in this case is the .banner div.
+  - The positioning of each image is defined by the .one, .two, and .three classes, which specify the distance from the top-left corner of the .banner div using the top and left properties.
+  - even though the images are positioned absolutely, they are contained within the boundaries of the .banner div because it is their closest positioned ancestor, and their absolute positioning is calculated relative to this container.
+-->

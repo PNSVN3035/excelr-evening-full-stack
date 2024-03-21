@@ -36,5 +36,5 @@ div
 h1
 {
     clear: left;
-    /* clear: both; */
+    /* clear: right; */
 }

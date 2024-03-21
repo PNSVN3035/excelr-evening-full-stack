@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Tutorial</title>
+    <style>
+      img {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+      }
+      .banner {
+        margin: 40px;
+        width: 80vw;
+        height: 70vh;
+        border: 5px solid green;
+      }
+      .one {
+        top: 0;
+        left: 0;
+        border: 5px solid black;
+      }
+      .two {
+        top: 0;
+        left: 8rem;
+        border: 5px solid green;
+      }
+      .three {
+        top: 0;
+        left: 16rem;
+        border: 5px solid greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <img src="./small.jpeg" class="one" alt="small" />
+      <img src="./big.jpeg" class="two" alt="big" />
+      <img src="./folder-img.jpeg" class="three" alt="folder-img" />
+    </div>
+  </body>
+</html>
+
+<!-- 
+
+  - all the images are stacked on top of one another 
+  - each image absolutely positioned within its containing block
+  - which in this case is the body only.
+  - the position of the absolutely positioned elements without any positioned ancestor is calculated relative to the body element.
+-->

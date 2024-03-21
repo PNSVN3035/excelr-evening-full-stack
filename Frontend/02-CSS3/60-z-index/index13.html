@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Tutorial</title>
+    <style>
+      img {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+      }
+      .ancestor {
+        margin: 1rem;
+        width: 500px;
+        height: 700px;
+        border: 8px solid black;
+        position: relative;
+      }
+      .grand-parent {
+        margin: 1rem;
+        width: 400px;
+        height: 600px;
+        border: 8px solid green;
+      }
+      .parent {
+        margin: 1rem;
+        width: 300px;
+        height: 400px;
+        border: 8px solid gold;
+      }
+      .child {
+        margin: 1rem;
+        width: 200px;
+        height: 200px;
+        border: 8px solid blueviolet;
+      }
+      .one {
+        top: 0;
+        left: 0;
+      }
+      .two {
+        top: 0;
+        left: 0;
+      }
+      .three {
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ancestor">
+      <div class="grand-parent">
+        <img src="./small.jpeg" class="one" alt="small" />
+        <div class="parent">
+          <img src="./small.jpeg" class="two" alt="small" />
+          <div class="child">
+            <img src="./small.jpeg" class="three" alt="small" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
