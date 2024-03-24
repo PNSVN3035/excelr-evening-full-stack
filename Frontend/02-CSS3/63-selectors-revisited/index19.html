@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Tutorial</title>
+
+    <style>
+      /* :root root pscedo class selector 
+         styling root of the html document
+         html element
+         general styles
+         css variables */
+      :root {
+        background: red;
+      }
+      h1 {
+        font-size: 3rem;
+      }
+
+      .absolute {
+        font-size: 24px;
+      }
+
+      .responsive {
+        /* responsive values - responsive towards the root */
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Am heading</h1>
+    <p class="absolute">
+      <span style="background: yellow">Absoulute</span> Lorem ipsum dolor sit
+      amet, consectetur adipisicing elit. Corrupti possimus quasi eum rerum odit
+      sed quas distinctio perspiciatis quidem, dicta deserunt tempora labore
+      iusto, modi voluptatum nesciunt repudiandae! Quisquam, explicabo!
+    </p>
+    <p class="responsive">
+      <span style="background: yellow">Responsive</span> Lorem ipsum dolor sit
+      amet, consectetur adipisicing elit. Corrupti possimus quasi eum rerum odit
+      sed quas distinctio perspiciatis quidem, dicta deserunt tempora labore
+      iusto, modi voluptatum nesciunt repudiandae! Quisquam, explicabo!
+    </p>
+  </body>
+</html>

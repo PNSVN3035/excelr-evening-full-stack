@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <style>
+      /* transform: translate(), scale(), rotate(), skew() */
+      div {
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+      }
+      .one {
+        background: red;
+        transform: scaleY(0.9);
+      }
+      .two {
+        background: green;
+        transform: scaleY(0.7);
+      }
+      .three {
+        background: blue;
+        transform: scaleY(0.5); /* Scales vertically by 0.5 times */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+  </body>
+</html>
+
+<!-- 
+scaleY(): This function scales an element only along the vertical (Y) axis by a specified factor. It takes one parameter:
+
+sy: The scaling factor for the vertical axis.
+ -->

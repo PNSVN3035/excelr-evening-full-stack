@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <style>
+      /* transform: translate(), scale(), rotate(), skew() */
+      div {
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+      }
+      .one {
+        background: red;
+        transform: scale();
+      }
+      .two {
+        background: green;
+        transform: scale(
+          1.5,
+          2
+        ); /* Scales horizontally by 1.5 times and vertically by 2 times */
+      }
+      .three {
+        background: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+  </body>
+</html>
+
+<!-- 
+scale(): This function scales an element both horizontally and vertically by a specified factor. It takes two parameters:
+sx: The scaling factor for the horizontal axis.
+sy: Optional. The scaling factor for the vertical axis. If omitted, it defaults to the same value as sx.
+ -->

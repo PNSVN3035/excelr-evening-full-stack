@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Tutorial</title>
+    <style>
+      /* 
+Transtion 0 = 100%
+from start state to end state
+ANIMATION 0 1% 2% .... 100%
+ multiple states
+*/
+      div {
+        width: 200px;
+        height: 100px;
+        color: white;
+        margin: 10px;
+      }
+      .transition {
+        background: red;
+        border: 2px solid black;
+        transition: all 2s linear;
+        /* animation: move 5s infinite; */
+      }
+      .transition:hover {
+        background: yellow;
+        transform: translateX(100px);
+      }
+      .animation {
+        background: blue;
+        /* animation-name: move;
+  animation-duration: 10s;
+  animation-iteration-count: 3; */
+        animation: move 5s infinite;
+      }
+
+      @keyframes move {
+        0% {
+          transform: translateX(20px);
+        }
+        50% {
+          transform: translateX(100px);
+          background: red;
+        }
+        75% {
+          transform: translateX(-200px);
+          background: yellow;
+        }
+        100% {
+          transform: translateX(20px);
+          background: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="transition">transition</div>
+    <div class="animation">animation</div>
+  </body>
+</html>
+
+<!-- 
+
+    This HTML document contains two `<div>` elements with different CSS transition and animation effects applied to them. Let's break down the key components:
+
+1. **HTML Structure**:
+   - Two `<div>` elements are created: one with the class `transition` and the other with the class `animation`.
+
+2. **CSS Styling**:
+   - All `<div>` elements have a width of 200px, height of 100px, white text color, and a margin of 10px.
+   
+   For `.transition` class:
+   - The background color is initially set to red.
+   - A CSS transition is applied using the `transition` property, which specifies that all CSS properties should transition over a duration of 2 seconds with a linear timing function. This means that any change in CSS properties of the `.transition` class will be smoothly transitioned over a period of 2 seconds.
+   - When hovered over (`.transition:hover`), the background color changes to yellow, and the element is translated horizontally by 100px using the `transform` property.
+   
+   For `.animation` class:
+   - The background color is initially set to blue.
+   - An animation named `move` is defined using `@keyframes`. This animation lasts for 5 seconds and repeats infinitely (`infinite`).
+   - The `move` animation defines four keyframes:
+     - At `0%`, the element is translated horizontally by 20px and has a background color of the initial blue.
+     - At `50%`, the element is translated further to the right (100px) and changes its background color to red.
+     - At `75%`, the element is translated back to the left (-200px) and changes its background color to yellow.
+     - At `100%`, the element returns to its original position and changes its background color to green.
+
+3. **Behavior**:
+   - The `.transition` div smoothly transitions its background color to yellow and moves 100px to the right when hovered over.
+   - The `.animation` div continuously cycles through the defined keyframes in the `move` animation, creating a looping sequence of translations and background color changes.
+
+In summary, this HTML document showcases the use of CSS transitions and animations to create dynamic effects on web elements. The transition effect smoothly changes the appearance of the element when triggered, while the animation continuously cycles through defined keyframes to create more complex and dynamic visual effects.
+ -->

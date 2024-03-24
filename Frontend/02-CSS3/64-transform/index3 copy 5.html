@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <style>
+      /* transform: translate(), scale(), rotate(), skew() */
+      div {
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+      }
+      .one {
+        background: red;
+        transform: translateY(-30px);
+      }
+      .two {
+        background: green;
+      }
+      .three {
+        background: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+  </body>
+</html>
+
+<!-- 
+The transform: translateX() CSS property is similar to translate(), but it only moves an element along the horizontal (X) axis. It allows you to translate an element horizontally without affecting its vertical position.
+
+The translateX() function takes one parameter:
+
+tx: The horizontal translation value.
+
+We apply the transform: translateX(-50px); property to this element.
+This translates (moves) the element -50 pixels to the left along the X-axis.
+ -->

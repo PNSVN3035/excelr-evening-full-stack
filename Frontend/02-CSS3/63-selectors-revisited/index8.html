@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Tutorial</title>
+
+    <style>
+      /* 
+Descendant and Child Selectors
+- children can be descendant but descendant cant be childrens
+*/
+      /* it is more specific */
+      /* even if you place it on the top you would get the same result */
+      .header h1 {
+        color: green;
+      }
+      /* descendant */
+      div h1 {
+        color: red;
+      }
+      /* direct child */
+      div > h1 {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- descendent child -->
+    <div class="header">
+      <h1>i'm a child and descendant</h1>
+    </div>
+    <div class="header">
+      <ul>
+        <li>
+          <h1>i'm a descendant</h1>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

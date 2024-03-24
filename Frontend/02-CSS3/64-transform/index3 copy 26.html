@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <style>
+      /* 
+how the transition takes place
+transition-timing-function
+transition:all 3s here 5s;
+ease = default
+ease = slow start, fast, slow end
+linear = same speed start to end
+ease-in = slow start
+ease-out = slow end
+ease-in-out = slow start,fast, slow end
+ 
+*/
+      div {
+        width: 100px;
+        height: 100px;
+        background: blue;
+        font-size: 24px;
+        color: white;
+        margin: 5px;
+        transition: all 2s;
+      }
+      div:hover {
+        transform: translateX(100px);
+      }
+      .ease {
+        transition-timing-function: ease;
+      }
+      .linear {
+        transition-timing-function: linear;
+      }
+      .ease-in {
+        transition-timing-function: ease-in;
+      }
+      .ease-out {
+        transition-timing-function: ease-out;
+      }
+      .ease-in-out {
+        transition-timing-function: ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="default">default</div>
+    <div class="ease">ease</div>
+    <div class="linear">linear</div>
+    <div class="ease-in">ease-in</div>
+    <div class="ease-out">ease-out</div>
+    <div class="ease-in-out">ease-in-out</div>
+  </body>
+</html>
+<!-- 
+
+  This HTML and CSS program demonstrates the use of CSS transitions and the `transition-timing-function` property to control the timing and pace of the transition effects. Let's break down the key components:
+
+1. **HTML Structure**:
+   - Six `<div>` elements are created, each containing a different class: `.default`, `.ease`, `.linear`, `.ease-in`, `.ease-out`, and `.ease-in-out`.
+
+2. **CSS Styling**:
+   - All `<div>` elements have a width and height of 100px, a blue background, white text, a font size of 24px, and a margin of 5px.
+   - The `transition` property is applied to all `<div>` elements with a duration of 2 seconds. This property specifies which CSS properties should transition over time and the duration of the transition.
+   - When any `<div>` element is hovered over (`div:hover`), its `transform` property is changed to `translateX(100px)`, causing it to move 100px horizontally to the right.
+
+3. **Transition Timing Functions**:
+   - Five additional classes (`.ease`, `.linear`, `.ease-in`, `.ease-out`, and `.ease-in-out`) are created, each specifying a different `transition-timing-function`.
+     - `.ease`: Default timing function. The transition starts slowly, accelerates through the middle, and slows down again at the end.
+     - `.linear`: Constant speed throughout the transition. The element moves at the same speed from start to finish.
+     - `.ease-in`: The transition starts slowly and accelerates as it progresses.
+     - `.ease-out`: The transition starts at full speed and slows down as it progresses.
+     - `.ease-in-out`: Similar to `.ease`, but with a slower start and end.
+
+4. **Behavior**:
+   - When any `<div>` element is hovered over, it moves horizontally to the right by 100px over a duration of 2 seconds.
+   - The timing function specified by each div's class determines how the transition progresses over time. Different timing functions produce different acceleration and deceleration effects during the transition.
+
+In summary, this program demonstrates how to use CSS transitions and timing functions to control the pace and behavior of transition effects applied to elements. Each `<div>` element exhibits a different timing function when hovered over, resulting in varying visual effects during the transition.
+ -->

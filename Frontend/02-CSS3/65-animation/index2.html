@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Tutorial</title>
+    <style>
+      /* 
+animation-fill-mode:what values are applied by the animation outside the time it is executing. 
+*/
+
+      div {
+        width: 200px;
+        height: 100px;
+        color: white;
+        margin: 10px;
+        opacity: 0;
+      }
+
+      .animation {
+        background: blue;
+        animation: move 5s 2;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes move {
+        0% {
+          opacity: 0.1;
+        }
+        25% {
+          transform: translateX(200px);
+          opacity: 0.25;
+        }
+        50% {
+          transform: translateX(-100px);
+          opacity: 0.5;
+        }
+        75% {
+          opacity: 0.75;
+        }
+        100% {
+          transform: translateX(20px);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="animation">animation</div>
+  </body>
+</html>
+
+<!-- 
+
+    This HTML document contains a single `<div>` element with a CSS animation applied to it. Let's break down the key components:
+
+1. **HTML Structure**:
+   - One `<div>` element is created with the class `animation`.
+
+2. **CSS Styling**:
+   - The `<div>` element has a width of 200px, height of 100px, white text color, and a margin of 10px.
+   - The initial opacity of the `<div>` element is set to 0, making it initially invisible.
+
+   For `.animation` class:
+   - The background color of the `<div>` element is set to blue.
+   - An animation named `move` is applied to the `<div>` element. This animation lasts for 5 seconds and repeats twice (`2`).
+   - The `animation-fill-mode` property is set to `forwards`, which specifies that the element should retain the computed values of the animation's final keyframe after the animation completes. In other words, the element should maintain the properties of the final keyframe even after the animation ends.
+
+3. **Keyframes**:
+   - The `move` animation is defined using `@keyframes`.
+   - The animation progresses through several keyframes:
+     - At `0%`, the opacity of the `<div>` element is set to 0.1.
+     - At `25%`, the element is translated horizontally by 200px, and its opacity is set to 0.25.
+     - At `50%`, the element is translated horizontally by -100px, and its opacity is set to 0.5.
+     - At `75%`, the opacity is set to 0.75.
+     - At `100%`, the element is translated horizontally by 20px, and its opacity is set to 1.
+
+4. **Behavior**:
+   - When the document loads, the `<div>` element with the class `animation` gradually fades in and moves horizontally according to the defined keyframes.
+   - The animation lasts for 5 seconds and repeats twice (`2`), and once it completes, the element retains the properties of the final keyframe (`opacity: 1`) due to the `animation-fill-mode: forwards` property.
+
+In summary, this HTML document showcases the use of CSS animations to gradually fade in and move a `<div>` element horizontally over a specified duration. The `animation-fill-mode` property ensures that the element retains the properties of the final keyframe even after the animation completes.
+ -->

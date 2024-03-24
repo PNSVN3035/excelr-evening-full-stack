@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <style>
+      /* transform: translate(), scale(), rotate(), skew() */
+      div {
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+      }
+      .one {
+        background: red;
+        /* Flips the element vertically (180 degrees around the X-axis) */
+        transform: rotateX(340deg);
+      }
+      .two {
+        background: green;
+        transform: rotateX(90deg); /* Rotate 45 degrees around the X-axis */
+        border: 5px solid black;
+      }
+      .three {
+        background: blue;
+        transform: rotateX(45deg); /* Rotate 45 degrees around the X-axis */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animation</title>
+    <style>
+      div {
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+        animation: rotateAnimation 4s linear infinite; /* Apply rotation animation */
+      }
+
+      @keyframes rotateAnimation {
+        0% {
+          transform: rotateX(0deg); /* Starting point, no rotation */
+        }
+        100% {
+          transform: rotateX(360deg); /* Rotating 360 degrees */
+        }
+      }
+
+      .one {
+        background: red;
+        /* Flips the element vertically (180 degrees around the X-axis) */
+        transform: rotateX(340deg);
+      }
+      .two {
+        background: green;
+        transform: rotateX(90deg); /* Rotate 45 degrees around the X-axis */
+      }
+      .three {
+        background: blue;
+        transform: rotateX(45deg); /* Rotate 45 degrees around the X-axis */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+  </body>
+</html>
+
+<!-- 
+rotateX(angle): This function rotates an element around the horizontal axis (X-axis) by a specified angle. This can create vertical flipping effects.
+ -->

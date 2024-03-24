@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Dimensions Background</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        overflow: hidden; /* Prevent scrolling */
+      }
+
+      .page-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 10px); /* Define columns */
+        grid-template-rows: repeat(auto-fill, 10px); /* Define rows */
+      }
+
+      .page-background div {
+        border: 1px solid #ccc; /* Border style */
+        box-sizing: border-box;
+        position: relative;
+      }
+
+      .page-background div::after {
+        content: attr(data-dimension); /* Display dimension */
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 10px; /* Adjust font size */
+        color: #333; /* Text color */
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-background">
+      <!-- Generate grid squares dynamically using JavaScript -->
+    </div>
+
+    <script>
+      // JavaScript to generate grid squares and assign dimensions
+      document.addEventListener("DOMContentLoaded", function () {
+        var pageWidth = window.innerWidth;
+        var pageHeight = window.innerHeight;
+        var numRows = Math.ceil(pageHeight / 10);
+        var numCols = Math.ceil(pageWidth / 10);
+        var container = document.querySelector(".page-background");
+
+        for (var i = 0; i < numRows * numCols; i++) {
+          var div = document.createElement("div");
+          var width = Math.floor(i % numCols) * 10;
+          var height = Math.floor(i / numCols) * 10;
+          var dimension = width + "px x " + height + "px";
+
+          if (width % 100 === 0 && width !== 0) {
+            dimension += "\n" + width + "px";
+          }
+          if (height % 100 === 0 && height !== 0) {
+            dimension += "\n" + height + "px";
+          }
+
+          div.setAttribute("data-dimension", dimension);
+          container.appendChild(div);
+        }
+      });
+    </script>
+  </body>
+</html>

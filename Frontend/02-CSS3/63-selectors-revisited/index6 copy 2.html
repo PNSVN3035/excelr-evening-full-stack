@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Tutorial</title>
+
+    <style>
+      /* 
+Descendant and Child Selectors
+- children can be descendant but descendant cant be childrens
+*/
+      /* descendant */
+      div h1 {
+        color: red;
+      }
+      /* direct child */
+      /* if there are no descendent elements are there then direct child element sector only will be considered */
+      div > h1 {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- descendent child -->
+    <div>
+      <h1>i'm a child and descendant</h1>
+      <div>
+        <h1>Am another direct child</h1>
+      </div>
+    </div>
+  </body>
+</html>

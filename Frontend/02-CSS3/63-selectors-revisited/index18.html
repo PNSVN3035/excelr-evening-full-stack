@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Tutorial</title>
+
+    <style>
+      /* :link : visited :hover :active */
+      a:link {
+        color: aqua;
+      }
+      /* all of them turn to red if in case of empty links */
+      /* if we dont want that we can supply an actual value in the href */
+      /* it will show that in red if you have already visited that url before */
+      a:visited {
+        color: red;
+      }
+      a:hover {
+        color: blue;
+      }
+      /*if you hold the left mouse button you can see the color  */
+      /* a:active { } targets the state of a link when it is being activated or clicked by the user.  */
+      /*  The :active pseudo-class applies styles to an element when it is in an activated state, which typically occurs while the mouse button is pressed down on the link. */
+      /* a:active targets all anchor (<a>) elements that are currently being activated or clicked.
+      When the link is active (i.e., being clicked), it will change its text color to red and its background color to yellow. */
+      a:active {
+        color: green;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://www.google.com/">general link</a>
+    <a href="#">visited link</a>
+    <a href="#">hover link</a>
+    <a href="https://www.wikipedia.org/">active link</a>
+  </body>
+</html>

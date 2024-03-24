@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <style>
+      /* transform: translate(), scale(), rotate(), skew() */
+      div {
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+      }
+      .one {
+        background: red;
+        transform: rotateZ(25deg);
+      }
+      .two {
+        background: green;
+        transform: rotateZ(50deg);
+      }
+      .three {
+        background: blue;
+        transform: rotateZ(75deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animation</title>
+    <style>
+      div {
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+        animation: rotateAnimation 4s linear infinite; /* Apply rotation animation */
+      }
+
+      @keyframes rotateAnimation {
+        0% {
+          transform: rotateZ(0deg);
+        }
+        100% {
+          transform: rotateZ(360deg);
+        }
+      }
+
+      .one {
+        background: red;
+      }
+      .two {
+        background: green;
+      }
+      .three {
+        background: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+  </body>
+</html> -->
+
+<!-- 
+scaleZ(): This function scales an element along the z-axis for 3D transforms. It takes one parameter:
+
+sz: The scaling factor for the z-axis.
+ -->

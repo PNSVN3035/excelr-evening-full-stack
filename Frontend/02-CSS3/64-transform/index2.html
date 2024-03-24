@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <style>
+      /* transform: translate(), scale(), rotate(), skew() */
+      div {
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+      }
+      .one {
+        background: red;
+      }
+      .two {
+        background: green;
+      }
+      .three {
+        background: blue;
+        transform: translate(20px, 20px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+  </body>
+</html>
+
+<!-- 
+The CSS transform property allows you to modify the position, size, and shape of an element. One of the functions you can use with transform is translate(). This function moves an element from its current position along the X and Y axes.
+
+The translate() function takes one or two parameters:
+
+tx: The horizontal translation value.
+ty: Optional. The vertical translation value. If omitted, it defaults to 0.
+
+ -->

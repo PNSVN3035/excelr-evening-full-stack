@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animation</title>
+    <style>
+      div {
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+        animation: rotateAnimation 4s linear infinite; /* Apply rotation animation */
+      }
+
+      @keyframes rotateAnimation {
+        0% {
+          transform: rotateY(0deg); /* Starting point, no rotation */
+        }
+        100% {
+          transform: rotateY(360deg); /* Rotating 360 degrees */
+        }
+      }
+
+      .one {
+        background: red;
+        /* Flips the element horizontally (180 degrees around the Y-axis) */
+        transform: rotateY(180deg);
+      }
+      .two {
+        background: green;
+        transform: rotateY(45deg); /* Rotate 45 degrees around the Y-axis */
+      }
+      .three {
+        background: blue;
+        transform: rotateY(90deg); /* Rotate 90 degrees around the Y-axis */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+  </body>
+</html>

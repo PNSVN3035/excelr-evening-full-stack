@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <style>
+      /* transition: change over time
+         transition-property:
+         transition-duration: */
+      div {
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+      }
+
+      div:hover {
+        background: coral;
+      }
+      .one {
+        background: red;
+      }
+      .two {
+        background: green;
+      }
+      .three {
+        background: blue;
+        /* transition-property: background;: Specifies that the transition effect applies only to the background property. */
+        transition-property: background, border-radius;
+        /* transition-duration: 4s;: Specifies the duration over which the transition effect should occur, in this case, 4 seconds. */
+        transition-duration: 4s, 2s;
+      }
+
+      .one:hover {
+        border-radius: 50%;
+      }
+      .two:hover {
+        border-radius: 50%;
+      }
+      .three:hover {
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+  </body>
+</html>

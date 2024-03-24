@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <style>
+      /* transform: translate(), scale(), rotate(), skew() */
+      div {
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+      }
+      .one {
+        background: red;
+        transform: rotateY(
+          45deg
+        ); /* Flips the element horizontally (180 degrees around the Y-axis) */
+      }
+      .two {
+        background: green;
+        transform: rotateY(
+          80deg
+        ); /* Flips the element horizontally (180 degrees around the Y-axis) */
+      }
+      .three {
+        background: blue;
+        transform: rotateY(
+          90deg
+        ); /* Flips the element horizontally (180 degrees around the Y-axis) */
+      }
+
+      .four {
+        transform: rotateY(89deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"><img src="./parrot.jpg" alt="parrot" /></div>
+  </body>
+</html>
+
+<!-- 
+rotateY(angle): This function rotates an element around the vertical axis (Y-axis) by a specified angle. This can create horizontal flipping effects.
+ -->

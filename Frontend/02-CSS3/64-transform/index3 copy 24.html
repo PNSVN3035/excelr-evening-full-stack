@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <style>
+      /* transition: change over time
+         transition-property:
+         transition-duration: */
+      div {
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+      }
+
+      .one {
+        background: red;
+      }
+      .two {
+        background: green;
+      }
+      .three {
+        background: blue;
+        transition: background 3s 2s, border-radius 5s 10s;
+      }
+
+      .three:hover {
+        background: coral;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <style>
+      /* transform: translate(), scale(), rotate(), skew() */
+      div {
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+      }
+      .one {
+        background: red;
+        /* expands both the sides */
+        transform: scaleX(2); /* Scales horizontally by 2 times */
+      }
+      .two {
+        background: green;
+      }
+      .three {
+        background: blue;
+        /* trimming happens both the sides */
+        transform: scaleX(0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+  </body>
+</html>
+
+<!-- 
+scaleX(): This function scales an element only along the horizontal (X) axis by a specified factor. It takes one parameter:
+
+sx: The scaling factor for the horizontal axis.
+ -->

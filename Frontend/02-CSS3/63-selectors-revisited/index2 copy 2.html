@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Tutorial</title>
+
+    <style>
+      /* 
+Descendant and Child Selectors
+- children can be descendant but descendant cant be childrens
+*/
+      /* descendent selector */
+      div h1 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- descendent child -->
+    <div>
+      <h1>Am from heading</h1>
+      <div>
+        <h1>Am from heading</h1>
+        <div>
+          <h1>Am from heading</h1>
+          <div>
+            <h1>Am from heading</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
