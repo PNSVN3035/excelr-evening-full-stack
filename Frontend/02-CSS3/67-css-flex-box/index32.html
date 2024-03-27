@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Flexbox</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body {
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			.flex-container {
+				display: flex;
+				background: #254ee4be;
+				border: 5px solid #254de4;
+			}
+			.item {
+				/* we can also use this to give the width */
+				flex-basis: 300px;
+				/* giving for all the items */
+				flex-grow: 1;
+				height: 100px;
+				border: 1px solid black;
+				background: #254de4;
+				color: #fff;
+				margin: 10px;
+				/* for centering the text of the item */
+				/* it can be a flex container as well */
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="flex-container">
+			<div class="item item1">Item 1</div>
+			<div class="item item2">Item 2</div>
+			<div class="item item3">Item 3</div>
+		</div>
+	</body>
+</html>
+
+<!-- 
+
+    When you apply flex-grow to a flex item, you assign it a value, usually a number greater than or equal to 0.
+The value represents the proportion of the available space that the flex item should take up compared to other flex items.
+If all flex items have a flex-grow value of 1, they will all grow equally and share the available space evenly.
+If one flex item has a flex-grow value of 2 while the others have a value of 1, the first item will take up twice as much of the available space as the others.
+ -->

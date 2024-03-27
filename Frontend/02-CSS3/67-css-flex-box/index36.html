@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flexbox</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .flex-container {
+        display: flex;
+        background-color: #f4f4f4;
+        border: 2px solid black;
+      }
+      .item {
+        /* short-hand property */
+        /* flex-grow, flex-shrink flex-basis  */
+        /* flex shorthand property is used to set the values of the flex-grow, flex-shrink, and flex-basis properties all at once. */
+        flex: 1;
+        /* flex-grow, flex-shrink flex-basis  */
+        /* flex: 1 0 100px; */
+        height: 100px;
+        background: #254ee4be;
+        border: 5px solid #254de4;
+        color: #fff;
+        margin: 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="flex-container">
+      <div class="item item1">Item 1</div>
+      <div class="item item2">Item 2</div>
+      <div class="item item3">Item 3</div>
+    </div>
+  </body>
+</html>
+
+<!-- 
+flex: 1;, it's a shorthand way of saying:
+flex-grow: 1;: The flex item will grow to fill any available space along the main axis if necessary. It will take up an equal amount of space as other flex items that also have a flex-grow value of 1.
+flex-shrink: 1;: The flex item can shrink if necessary. It will share the space along the main axis equally with other flex items that also have a flex-shrink value of 1 when there isn't enough space.
+flex-basis: 0%;: The initial main size of the flex item is set to 0, which allows it to grow to fill the container or shrink to accommodate its content.
+ -->

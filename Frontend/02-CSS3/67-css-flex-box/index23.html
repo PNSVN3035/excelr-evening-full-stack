@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Flexbox</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body {
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			.flex-container {
+				display: flex;
+				background-color: #f4f4f4;
+				border: 2px solid black;
+			}
+			.item {
+				width: 100px;
+				height: 100px;
+				background: #254ee4be;
+				border: 5px solid #254de4;
+				color: #fff;
+				margin: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="flex-container">
+			<div class="item item1">Item 1</div>
+			<div class="item item2">Item 2</div>
+			<div class="item item3">Item 3</div>
+		</div>
+	</body>
+</html>
