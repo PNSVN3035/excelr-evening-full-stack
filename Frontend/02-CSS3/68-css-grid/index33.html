@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+        background: #f5f5f5;
+      }
+      .container {
+        max-width: 960px;
+        margin: 100px auto;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border: 2px solid black;
+        gap: 10px;
+      }
+
+      .item {
+        background: steelblue;
+        color: #fff;
+        font-size: 20px;
+        padding: 20px;
+        border: skyblue 1px solid;
+      }
+
+      .item:nth-of-type(1) {
+        background: #000;
+        /* streching from grid number one to upto grid number 3 */
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- .item{Item $}*9 -->
+      <!-- layout will be changed -->
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+        quisquam sequi adipisci illo aperiam expedita odit quam ipsam optio
+        nihil et, provident magnam quasi? Explicabo natus error dolore ducimus
+        laborum?
+      </div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+      <div class="item">Item 7</div>
+      <div class="item">Item 8</div>
+      <div class="item">Item 9</div>
+    </div>
+  </body>
+</html>
+
+<!-- CSS Grid is a powerful tool that css gives us to easily align items and create two-dimentional layouts
+
+- flex was created first and has a bit more browser compatibilty
+- recommeded to learn both flex box and grid
+
+- grid container is the element that holds the grid items, grid items are direct children of grid containers. a container is created with display: grid
+
+- unlike flexbox, which is one-dimentional and can be either a row or column a css grid allows us to create two-dimensional layouts with rows and coloumns
+-->

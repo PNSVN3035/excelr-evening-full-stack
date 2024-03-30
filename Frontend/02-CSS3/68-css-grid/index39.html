@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+            * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+            }
+            body {
+              font-family: "Open Sans", sans-serif;
+              font-size: 16px;
+              line-height: 1.5;
+              color: #333;
+              background: #f5f5f5;
+            }
+            .container {
+              max-width: 960px;
+              margin: 100px auto;
+              padding: 10px;
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              border: 2px solid black;
+              gap: 10px;
+            }
+
+            .item {
+              background: steelblue;
+              color: #fff;
+              font-size: 20px;
+              padding: 20px;
+              border: skyblue 1px solid;
+            }
+      /* once the screen reaches to 500px then grid will maintain 1fr  */
+            @media (max-width: 500px){
+              .container
+              {
+                  grid-template-columns: 1fr;
+            }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- .item{Item $}*9 -->
+      <!-- layout will be changed -->
+      <!-- responsiveness, whatever the size of the screen it will maintain the same no. of columns -->
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+      <div class="item">Item 7</div>
+      <div class="item">Item 8</div>
+      <div class="item">Item 9</div>
+    </div>
+  </body>
+</html>
