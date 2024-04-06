@@ -1,0 +1,23 @@
+Javscript
+-------------
+- Most popular programming languages in the world. 
+- Javascript is called as the language of the web browser.
+- Loosely typed or dynamically typed language.
+- HTML is content layer, css is presentation layer, javascript is behaviour layer
+- Javascript is a high level programming language.
+- Javascript is a programming language.
+- Javascript is a Object Oriented and Object Based Programming language.
+- To get the dynamic functionality for websites we can use Javascript.
+- For Server side programming we can use Javascript.
+- We can develop desktop applications using Javascript.
+- Javascript is also a scripting language, since scripting style syntax.
+- Javascript and Java bothe are different languages. In design and In priciple.
+- We can use Javascript for form validations.
+- Javascript has many frameworks, React, Angular, Node, Vue, Express.
+- First HTML then only Javascript
+
+Settings
+----------
+1. vs code setting -> prettier semi - turn on
+2. vs code setting -> prettier single quote - turn on
+3. vs code setting -> prettier tab size - 2

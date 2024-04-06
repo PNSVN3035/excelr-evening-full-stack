@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Data</title>
+	</head>
+	<body>
+		<h2>Form Data</h2>
+		<script>
+			//Get the URL parameters
+			let urlParams = new URLSearchParams(window.location.search);
+			let param1 = urlParams.get('param1');
+			let param2 = urlParams.get('param2');
+			let param3 = urlParams.get('firstName');
+			let param4 = urlParams.get('cardNumber');
+			let param5 = urlParams.get('address');
+
+			document.write('<h3>Paramerter 1: ' + param1 + '</h3>');
+			document.write('</br>');
+			document.write('<h3>Paramerter 2: ' + param2 + '</h3>');
+			document.write('</br>');
+			document.write('<h3>Paramerter 3: ' + param3 + '</h3>');
+			document.write('<h3>Paramerter 4: ' + param4 + '</h3>');
+			document.write('<h3>Paramerter 5: ' + param5 + '</h3>');
+		</script>
+	</body>
+</html>
