@@ -1,0 +1,47 @@
+<form action="success.html">
+  First Name:
+  <input type="text" name="firstName" />
+  <!-- using span to display only error
+      initially it will be empty -->
+  <span id="firstNameError"></span><br />
+  Last Name:
+  <input type="text" name="lastName" />
+  <span id="lastNameError"></span><br />
+  Age:
+  <input type="text" name="age" />
+  <span id="ageError"></span><br />
+
+  <input type="submit" onclick="return validate()" value="submit" />
+</form>
+
+<script>
+  function validate() {
+    var thisForm = document.forms[0];
+    var firstName = thisForm.firstName;
+    var lastName = thisForm.lastName;
+    var age = thisForm.age;
+
+    var firstNameFailedStatus = firstName.value.length == 0;
+    var lastNameFailedStatus = lastName.value.length == 0;
+    var ageFailedStatus = age.value.length == 0;
+
+    var v1 = document.getElementById('firstNameError');
+    var v2 = document.getElementById('lastNameError');
+    var v3 = document.getElementById('ageError');
+
+    return (
+      ((v1.style.color = firstNameFailedStatus ? 'red' : ''),
+      (v1.innerHTML = firstNameFailedStatus ? 'Enter First Name' : ''),
+      firstNameFailedStatus ? thisForm.firstName.focus() : true,
+      !firstNameFailedStatus) &&
+      ((v2.style.color = lastNameFailedStatus ? 'red' : ''),
+      (v2.innerHTML = lastNameFailedStatus ? 'Enter Last Name' : ''),
+      lastNameFailedStatus ? thisForm.lastName.focus() : true,
+      !lastNameFailedStatus) &&
+      ((v3.style.color = ageFailedStatus ? 'red' : ''),
+      (v3.innerHTML = ageFailedStatus ? 'Enter Age' : ''),
+      ageFailedStatus ? thisForm.age.focus() : true,
+      !ageFailedStatus)
+    );
+  }
+</script>
