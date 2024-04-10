@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sorting Demo</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				background-color: #f3f3f3;
+			}
+
+			#container {
+				text-align: center;
+			}
+
+			button {
+				padding: 10px 20px;
+				margin: 10px;
+				font-size: 16px;
+				cursor: pointer;
+			}
+
+			#output {
+				margin-top: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<h2>Sorting Demo</h2>
+			<button onclick="sortAllElements()">Sort All Elements</button>
+			<div id="output"></div>
+		</div>
+
+		<script>
+			var elements = [
+				-100,
+				100,
+				20.4,
+				10.5,
+				500,
+				-1,
+				true,
+				false,
+				'FALSE',
+				'hello',
+				'ABCD',
+				'ABCd',
+				'FALSE',
+			];
+
+			function sortAllElements() {
+				var sortedElements = elements.slice(); // Create a copy of the array
+				sortedElements.sort(function (a, b) {
+					alert(
+						'Comparing: ' + a + ' and ' + b + '\n' + getComparisonReason(a, b)
+					);
+					return a - b;
+				});
+				displayResult(sortedElements);
+			}
+
+			function getComparisonReason(a, b) {
+				// Explain why a particular element is sorted
+				if (typeof a === 'number' && typeof b === 'number') {
+					return 'Numbers are sorted based on their numeric values.';
+				} else if (typeof a === 'string' && typeof b === 'string') {
+					return 'Strings are sorted lexicographically (alphabetically).';
+				} else if (typeof a === 'boolean' && typeof b === 'boolean') {
+					return 'Booleans are sorted as false before true.';
+				} else {
+					return 'Different types are sorted based on their order in JavaScript (numbers < strings < booleans).';
+				}
+			}
+
+			function displayResult(array) {
+				var output = document.getElementById('output');
+				output.innerHTML = 'Sorted Array: ' + array.join(', ');
+			}
+		</script>
+	</body>
+</html>

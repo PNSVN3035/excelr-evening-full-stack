@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sorting Demo</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				background-color: #f3f3f3;
+			}
+
+			#container {
+				text-align: center;
+			}
+
+			button {
+				padding: 10px 20px;
+				margin: 10px;
+				font-size: 16px;
+				cursor: pointer;
+			}
+
+			#output {
+				margin-top: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<h2>Sorting Demo</h2>
+			<button onclick="sortNumbers()">Sort Numbers</button>
+			<button onclick="sortStrings()">Sort Strings</button>
+			<button onclick="sortBooleans()">Sort Booleans</button>
+			<div id="output"></div>
+		</div>
+
+		<script>
+			var elements = [
+				-100,
+				100,
+				20.4,
+				10.5,
+				500,
+				-1,
+				true,
+				false,
+				'FALSE',
+				'hello',
+				'ABCD',
+				'ABCd',
+				'FALSE',
+			];
+
+			function sortNumbers() {
+				var numbers = elements.filter((num) => typeof num === 'number');
+				numbers.sort(function (a, b) {
+					return a - b;
+				});
+				displayResult(numbers);
+			}
+
+			function sortStrings() {
+				var strings = elements.filter((str) => typeof str === 'string');
+				strings.sort();
+				displayResult(strings);
+			}
+
+			function sortBooleans() {
+				var booleans = elements.filter((bool) => typeof bool === 'boolean');
+				booleans.sort();
+				displayResult(booleans);
+			}
+
+			function displayResult(array) {
+				var output = document.getElementById('output');
+				output.innerHTML = 'Sorted Array: ' + array.join(', ');
+			}
+		</script>
+	</body>
+</html>

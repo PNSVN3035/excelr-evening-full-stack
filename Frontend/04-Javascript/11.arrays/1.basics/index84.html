@@ -1,4 +1,5 @@
 <p id="p1">initial content</p>
+<p id="p2">type of the content</p>
 New Element1 : <input type="text" id="newElement1" /><br />
 New Element2 : <input type="text" id="newElement2" /><br />
 New Element3 : <input type="text" id="newElement3" /><br />
@@ -15,19 +16,20 @@ Elements count to be removed : <input type="text" id="removeTotal" /><br />
   value="populate array content"
   onclick="readArrayContent()"
 />
+<input type="button" value="know the type" onclick="elementsType()" />
 <script>
-  var elements = [100, 20.0, true, "hello", 500];
+  var elements = [100, 20.0, true, 'hello', 500];
   function readArrayContent() {
-    document.getElementById("p1").innerHTML = elements.join(", ");
+    document.getElementById('p1').innerHTML = elements.join(', ');
   }
   function insertNewElementAtSpecifiedLocation() {
     //dynamically reading
-    var newElement1 = document.getElementById("newElement1").value;
-    var newElement2 = document.getElementById("newElement2").value;
-    var newElement3 = document.getElementById("newElement3").value;
-    var newElement4 = document.getElementById("newElement4").value;
-    var index = document.getElementById("location").value;
-    var removeTotal = document.getElementById("removeTotal").value;
+    var newElement1 = document.getElementById('newElement1').value;
+    var newElement2 = document.getElementById('newElement2').value;
+    var newElement3 = document.getElementById('newElement3').value;
+    var newElement4 = document.getElementById('newElement4').value;
+    var index = document.getElementById('location').value;
+    var removeTotal = document.getElementById('removeTotal').value;
     //from which location, how many should be removed, after removing insert 1,2,3,4th element, these are variable no. of arguments.
     elements.splice(
       index,
@@ -38,5 +40,13 @@ Elements count to be removed : <input type="text" id="removeTotal" /><br />
       newElement4
     );
     readArrayContent();
+  }
+
+  function elementsType() {
+    var str = '';
+    for (var i = 0; i < elements.length; i++) {
+      str += typeof elements[i] + ', ';
+    }
+    document.getElementById('p2').innerHTML = str;
   }
 </script>

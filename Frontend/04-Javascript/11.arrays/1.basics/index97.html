@@ -13,15 +13,16 @@ Elements to be removed : <input type="text" id="total" value="2" /><br />
   value="remove above specified range of elements"
   onclick="removeRangeOfElementsFromArray()"
 />
+
 <script>
-  var elements = [100, 20.0, true, "hello", 500];
+  var elements = [100, 20.0, true, 'hello', 500];
   function readArrayContent() {
-    document.getElementById("p1").innerHTML = elements.join(", ");
+    document.getElementById('p1').innerHTML = elements.join(', ');
   }
   function removeRangeOfElementsFromArray() {
     //dynamically reading
-    var from = document.getElementById("from").value;
-    var total = document.getElementById("total").value;
+    var from = document.getElementById('from').value;
+    var total = document.getElementById('total').value;
     elements.splice(from, total);
     readArrayContent();
   }

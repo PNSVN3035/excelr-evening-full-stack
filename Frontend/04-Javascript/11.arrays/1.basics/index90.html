@@ -7,14 +7,15 @@
 <input type="button" value="add new element" onclick="addToArray()" />
 
 <script>
-  var elements = [100, 20.0, true, "hello", 500];
+  var elements = [100, 20.0, true, 'hello', 500];
   function readArrayContent() {
-    document.getElementById("p1").innerHTML = elements.join(", ");
+    document.getElementById('p1').innerHTML = elements.join(', ');
   }
   function addToArray() {
     //we can also use inbuilt push method to add to array
     elements.push(1245);
-    elements.push("vijay");
+    elements.push('vijay');
     readArrayContent();
+    //to refresh p1, once again calling readArrayContent();
   }
 </script>

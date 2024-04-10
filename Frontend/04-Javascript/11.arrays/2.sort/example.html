@@ -1,0 +1,81 @@
+<p id="p1">initial content</p>
+<input type="button" value="customSort" onclick="customSort()" />
+<input type="button" value="sort" onclick="sortElements()" />
+<input
+	type="button"
+	value="populate array content"
+	onclick="readArrayContent()"
+/>
+<input
+	type="button"
+	value="Display ASCII Values"
+	onclick="displayAsciiValues()"
+/>
+
+<script>
+	var elements = [
+		-100,
+		100,
+		20.4,
+		10.5,
+		500,
+		-1,
+		true,
+		false,
+		'FALSE',
+		'hello',
+		'ABCD',
+		'ABCd',
+		'FALSE',
+	];
+	function readArrayContent() {
+		var content = '';
+		for (var i = 0; i < elements.length; i++) {
+			content += elements[i];
+			if (typeof elements[i] === 'string') {
+				content += ' (ASCII: ' + getAsciiValues(elements[i]) + ')';
+			} else if (typeof elements[i] === 'boolean') {
+				content += ' (ASCII: ' + (elements[i] ? 116 : 102) + ')'; // ASCII for true and false respectively
+			} else if (typeof elements[i] === 'number') {
+				content += ' (ASCII: ' + elements[i] + ')'; // ASCII for numbers is the number itself
+			}
+			if (i !== elements.length - 1) {
+				content += ', ';
+			}
+		}
+		document.getElementById('p1').innerHTML = content;
+	}
+
+	function getAsciiValues(str) {
+		return str
+			.split('')
+			.map(function (char) {
+				return char.charCodeAt(0);
+			})
+			.join(', ');
+	}
+
+	function sortElements() {
+		elements.sort(function (a, b) {
+			return a - b;
+		});
+		readArrayContent();
+	}
+
+	function customSort() {
+		for (var i = 0; i < elements.length; i++) {
+			for (var j = i + 1; j < elements.length; j++) {
+				if (elements[i] > elements[j]) {
+					var swap = elements[i];
+					elements[i] = elements[j];
+					elements[j] = swap;
+				}
+			}
+		}
+		readArrayContent();
+	}
+
+	function displayAsciiValues() {
+		readArrayContent();
+	}
+</script>

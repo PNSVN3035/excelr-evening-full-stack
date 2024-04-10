@@ -13,14 +13,14 @@ Location : <input type="text" id="location" /><br />
   onclick="readArrayContent()"
 />
 <script>
-  var elements = [100, 20.0, true, "hello", 500];
+  var elements = [100, 20.0, true, 'hello', 500];
   function readArrayContent() {
-    document.getElementById("p1").innerHTML = elements.join(", ");
+    document.getElementById('p1').innerHTML = elements.join(', ');
   }
   function insertNewElementAtSpecifiedLocation() {
     //dynamically reading
-    var newElement = document.getElementById("newElement").value;
-    var index = document.getElementById("location").value;
+    var newElement = document.getElementById('newElement').value;
+    var index = document.getElementById('location').value;
     //from this index onwards, remove 0 numberof elements, and insert this element
     elements.splice(index, 0, newElement);
     readArrayContent();

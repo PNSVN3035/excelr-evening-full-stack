@@ -4,16 +4,12 @@
   value="populate array content"
   onclick="readArrayContent()"
 />
-<input
-  type="button"
-  value="remove last element"
-  onclick="removeLastFromArray()"
-/>
+<input type="button" value="splice" onclick="removeLastFromArray()" />
 
 <script>
-  var elements = [100, 20.0, true, "hello", 500];
+  var elements = [100, 20.0, true, 'hello', 500];
   function readArrayContent() {
-    document.getElementById("p1").innerHTML = elements.join(", ");
+    document.getElementById('p1').innerHTML = elements.join(', ');
   }
   function removeLastFromArray() {
     //it takes the first argument as the location, second argument is how many elements should be removed

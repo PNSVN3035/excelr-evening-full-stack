@@ -1,5 +1,6 @@
 <p id="p1">initial content</p>
-<input type="button" value="sort" onclick="customSort()" />
+<input type="button" value="customSort" onclick="customSort()" />
+<input type="button" value="sort" onclick="sortElements()" />
 <input
   type="button"
   value="populate array content"
@@ -8,20 +9,26 @@
 
 <script>
   var elements = [
-    -1,
     100,
-    20.0,
+    20.4,
     10.5,
     500,
+    -1,
     true,
     false,
-    "FALSE",
-    "hello",
-    "ABCD",
-    "ABCd",
+    'FALSE',
+    'hello',
+    'ABCD',
+    'ABCD',
+    'ABCd',
+    'FALSE',
+    -100,
+    -2,
+    'DCBA',
+    'aaaa',
   ];
   function readArrayContent() {
-    document.getElementById("p1").innerHTML = elements.join(", ");
+    document.getElementById('p1').innerHTML = elements.join(', ');
   }
 
   function sortElements() {
@@ -43,8 +50,7 @@
         }
       }
     }
-    alert("sorting is done! click on populate once again");
-    return elements;
+    readArrayContent();
   }
   //readArrayContent();
 </script>

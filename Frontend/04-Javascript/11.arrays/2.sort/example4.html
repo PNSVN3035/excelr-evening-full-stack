@@ -1,0 +1,37 @@
+<script>
+	var values = [
+		-100,
+		100,
+		20.4,
+		10.5,
+		500,
+		-1,
+		true,
+		false,
+		'FALSE',
+		'hello',
+		'ABCD',
+		'ABCd',
+		'FALSE',
+	];
+
+	// Function to get ASCII values for a given string
+	function getAsciiValues(str) {
+		var asciiValues = [];
+		for (var i = 0; i < str.length; i++) {
+			asciiValues.push(str.charCodeAt(i));
+		}
+		return asciiValues.join(', ');
+	}
+
+	// Generate and display ASCII values for each value
+	values.forEach(function (value) {
+		if (typeof value === 'string') {
+			console.log("ASCII values for '" + value + "': " + getAsciiValues(value));
+		} else if (typeof value === 'boolean') {
+			console.log('ASCII values for ' + value + ': ' + (value ? 116 : 102)); // ASCII for true and false respectively
+		} else {
+			console.log('ASCII value for ' + value + ': ' + value);
+		}
+	});
+</script>
