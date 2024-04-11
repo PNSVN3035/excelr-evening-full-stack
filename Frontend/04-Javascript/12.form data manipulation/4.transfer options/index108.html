@@ -29,9 +29,9 @@
 <script>
   function addOptions() {
     //from dropdown
-    var from = document.getElementById("from");
+    var from = document.getElementById('from');
     //to dropdown
-    var to = document.getElementById("to");
+    var to = document.getElementById('to');
     //findout every option from, from dropdown
     //there is options which return array of options.
     //options is a property inside dropdown
@@ -42,13 +42,15 @@
         //if any option got selected then move that option to "to"
         //removing from 'from' and adding to 'to'
         to.add(fromOptions[i]);
+        alert('removing: ' + fromOptions[i] + 'current i value: : ' + i);
         i--;
+        alert('i value became : ' + i);
       }
     }
   }
   function removeOptions() {
-    var from = document.getElementById("from");
-    var to = document.getElementById("to");
+    var from = document.getElementById('from');
+    var to = document.getElementById('to');
     var toOptions = to.options;
     for (var i = 0; i < toOptions.length; i++) {
       if (toOptions[i].selected) {
@@ -62,13 +64,13 @@
   function moveToUp() {
     //from option
     //get all the options into array
-    var from = document.getElementById("from");
+    var from = document.getElementById('from');
     var fromOptions = from.options;
     if (fromOptions.length > 0 && !fromOptions[0].selected) {
       moveToUpElement(fromOptions);
     }
     //from option
-    var to = document.getElementById("to");
+    var to = document.getElementById('to');
     var toOptions = to.options;
     if (toOptions.length > 0 && !toOptions[0].selected) {
       moveToUpElement(toOptions);
