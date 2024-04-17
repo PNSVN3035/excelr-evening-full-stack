@@ -97,4 +97,47 @@
       preOption = currentOption;
     }
   }
+
+  function moveToDown() {
+    var from = document.getElementById('from');
+    var fromOptions = from.options;
+    var anyFromSelected = Array.from(fromOptions).some(
+      (option) => option.selected
+    );
+
+    if (anyFromSelected && fromOptions.length > 0) {
+      moveToDownElement(fromOptions);
+    }
+
+    //from option
+    var to = document.getElementById('to');
+    var toOptions = to.options;
+    var anyToSelected = Array.from(toOptions).some((option) => option.selected);
+
+    if (anyToSelected && toOptions.length > 0) {
+      moveToDownElement(toOptions);
+    }
+  }
+
+  function moveToDownElement(allOptions) {
+    // Last option treated as previous
+    var preOption = allOptions[allOptions.length - 1];
+    var currentOption;
+    for (var i = allOptions.length - 1; i >= 0; i--) {
+      currentOption = allOptions[i];
+      if (currentOption.selected) {
+        // Swapping values and text content
+        var tempValue = currentOption.value;
+        var tempText = currentOption.text;
+        currentOption.value = preOption.value;
+        currentOption.text = preOption.text;
+        preOption.value = tempValue;
+        preOption.text = tempText;
+      }
+
+      if (!currentOption.selected) {
+        preOption = currentOption;
+      }
+    }
+  }
 </script>

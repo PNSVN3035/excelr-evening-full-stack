@@ -9,27 +9,27 @@
   function validate() {
     //value contains minimum requirement of email
 
-    var value = document.getElementById("email").value;
-    var emailError = document.getElementById("emailError");
+    var value = document.getElementById('email').value;
+    var emailError = document.getElementById('emailError');
     //value contains minimum requirement of email it should have '@' char
-    var atIndex = value.indexOf("@");
+    var atIndex = value.indexOf('@');
     //if atIndex is -1 then '@' char not available
     if (atIndex == -1) {
-      emailError.innerHTML = "should have @";
-      emailError.style.color = "red";
+      emailError.innerHTML = 'should have @';
+      emailError.style.color = 'red';
       return;
     } else {
       //if '@' is there we are making span as blank
-      emailError.innerHTML = "";
+      emailError.innerHTML = '';
     }
-    var dotIndex = value.indexOf(".", atIndex);
+    var dotIndex = value.indexOf('.', atIndex);
     if (dotIndex == -1) {
       emailError.innerHTML = "there should be minimum one dot '.' after @";
-      emailError.style.color = "red";
+      emailError.style.color = 'red';
       return;
     } else {
       //if '.' is there we are making span as blank
-      emailError.innerHTML = "";
+      emailError.innerHTML = '';
     }
   }
 </script>
