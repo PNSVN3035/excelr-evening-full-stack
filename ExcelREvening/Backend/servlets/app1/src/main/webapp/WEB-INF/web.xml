@@ -1,0 +1,20 @@
+<!-- recommeded to write all the tags in lower case  -->
+<web-app>
+	<servlet>
+		<!-- for the lengthy class names we are giving alias names -->
+		<!-- whitespaces are allowed before and after the identifier -->
+		<servlet-name>s1</servlet-name>
+		<servlet-class>com.excelr.pack1.HelloServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<!-- now we don't have to mention the servlet name. Just we can mention the servlet identifier -->
+		<servlet-name>s1</servlet-name>
+		<!-- url pattern should be starting with '/' followed by any identifier name -->
+		<!-- now HelloServlet is assigned to s1 -->
+		<!-- HelloServlet can be referred through s1 -->
+		<!-- s1 is mapped to one url called 'hello' -->
+		<!-- the same s1 can be mapped any no. of urls -->
+		<url-pattern>/hello</url-pattern>
+	</servlet-mapping>
+</web-app>
