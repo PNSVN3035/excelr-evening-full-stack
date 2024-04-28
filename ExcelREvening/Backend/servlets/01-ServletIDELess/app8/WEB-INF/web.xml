@@ -1,0 +1,22 @@
+<web-app>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>        
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>s8</servlet-name>
+        <servlet-class>com.excelr.main.Servlet8</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>s9</servlet-name>
+        <servlet-class>com.excelr.main.Servlet9</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>s8</servlet-name>
+        <url-pattern>/servletEight</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>s9</servlet-name>
+        <url-pattern>/servletNine</url-pattern>
+    </servlet-mapping>
+</web-app>

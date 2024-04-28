@@ -1,0 +1,14 @@
+<web-app>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>        
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>s12</servlet-name>
+        <servlet-class>com.excelr.main.Servlet12</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>s12</servlet-name>
+        <url-pattern>/servletTwelve</url-pattern>
+    </servlet-mapping>
+</web-app>

@@ -1,0 +1,11 @@
+<web-app>
+    <servlet>
+        <servlet-name>s4</servlet-name>
+        <servlet-class>com.excelr.main.Servlet4</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>s4</servlet-name>
+        <url-pattern>/servletFour</url-pattern>
+    </servlet-mapping>
+</web-app>
