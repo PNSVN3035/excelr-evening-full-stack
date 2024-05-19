@@ -1,5 +1,0 @@
-INDEX VERSION 1.134
-C:\Users\prems\OneDrive\Desktop\ExcelR\ExcelREvening\Backend\servlets\03-JSPsOnIDE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\117669671.index
-\01-jsp-fundamentals\src\main\java
-C:\Users\prems\OneDrive\Desktop\ExcelR\ExcelREvening\Backend\servlets\03-JSPsOnIDE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1978922990.index
-\02-reading-html-data-with-jsp\src\main\java

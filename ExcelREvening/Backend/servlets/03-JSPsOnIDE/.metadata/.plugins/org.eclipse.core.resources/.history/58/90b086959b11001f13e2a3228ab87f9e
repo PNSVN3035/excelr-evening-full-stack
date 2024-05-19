@@ -1,4 +1,0 @@
-<p align="center">
-	End of the page
-	<%= java.util.Date() %>
-</p>
