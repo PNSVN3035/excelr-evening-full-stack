@@ -1,0 +1,14 @@
+127.0.0.1 - - [15/May/2024:19:21:50 -0400] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [15/May/2024:19:21:53 -0400] "GET /01-jsp-fundamentals/ HTTP/1.1" 404 775
+0:0:0:0:0:0:0:1 - - [15/May/2024:19:22:04 -0400] "GET /01-jsp-fundamentals/01-hellow-world.jsp HTTP/1.1" 404 749
+0:0:0:0:0:0:0:1 - - [15/May/2024:19:22:15 -0400] "GET /01-jsp-fundamentals/01-hello-world.jsp HTTP/1.1" 200 232
+0:0:0:0:0:0:0:1 - - [15/May/2024:19:26:12 -0400] "GET /01-jsp-fundamentals/01-expression-test.jsp HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [15/May/2024:19:26:21 -0400] "GET /01-jsp-fundamentals/02-expression-test.jsp HTTP/1.1" 200 293
+0:0:0:0:0:0:0:1 - - [15/May/2024:19:28:18 -0400] "GET /01-jsp-fundamentals/03-scriptlet-test.jsp HTTP/1.1" 200 451
+0:0:0:0:0:0:0:1 - - [15/May/2024:19:31:06 -0400] "GET /01-jsp-fundamentals/04-declaration-test.jsp HTTP/1.1" 200 217
+0:0:0:0:0:0:0:1 - - [15/May/2024:19:32:23 -0400] "GET /01-jsp-fundamentals/05-built-in-object.jsp HTTP/1.1" 200 350
+0:0:0:0:0:0:0:1 - - [15/May/2024:19:35:49 -0400] "GET /01-jsp-fundamentals/06-LogicUtil.jsp HTTP/1.1" 200 228
+0:0:0:0:0:0:0:1 - - [15/May/2024:19:41:32 -0400] "GET /01-jsp-fundamentals/07-homepage.jsp HTTP/1.1" 200 389
+0:0:0:0:0:0:0:1 - - [15/May/2024:19:41:57 -0400] "GET /01-jsp-fundamentals/07-homepage.jsp HTTP/1.1" 200 375
+0:0:0:0:0:0:0:1 - - [15/May/2024:19:42:09 -0400] "GET /01-jsp-fundamentals/07-homepage.jsp HTTP/1.1" 200 389
+0:0:0:0:0:0:0:1 - - [15/May/2024:19:42:12 -0400] "GET /01-jsp-fundamentals/07-homepage.jsp HTTP/1.1" 200 389
