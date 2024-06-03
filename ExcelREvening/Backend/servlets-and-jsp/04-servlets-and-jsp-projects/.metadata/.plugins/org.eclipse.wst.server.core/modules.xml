@@ -3,4 +3,5 @@
   <module moduleId="org.eclipse.jst.jee.server:login-application" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:01-login-app" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:02-employee-crud-app" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:03-task-management-system" serverId="Tomcat v9.0 Server at localhost"/>
 </modules>
