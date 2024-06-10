@@ -1,37 +1,31 @@
 package com.excelr.practice;
 
-import java.util.List;
-
-import javax.persistence.Column;
+import javax.persistence.Cacheable;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToMany;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
+
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 @Entity
+@Cacheable
+@Cache(usage = CacheConcurrencyStrategy.READ_ONLY)
 public class Student 
 {
 	@Id
 	private int sid;
 	private String sname;
-	private int smarks;
-	
-	@ManyToMany(mappedBy = "stud")
-	private List<Laptop> laptop;
+	private String semail;
 		
 	public Student() {
 		super();		
 	}
 	
-	public Student(int sid, String sname, int smarks, List<Laptop> laptop) {
+	public Student(int sid, String sname, String semail) {
 		super();
 		this.sid = sid;
 		this.sname = sname;
-		this.smarks = smarks;
-		this.laptop = laptop;
+		this.semail = semail;
 	}
 
 	public int getSid() {
@@ -46,16 +40,16 @@ public class Student
 	public void setSname(String Sname) {
 		this.sname = sname;
 	}
-	public int getSmarks() {
-		return smarks;
+	public String getSemail() {
+		return semail;
 	}
-	public void setSmarks(int smarks) {
-		this.smarks = smarks;
+	public void setSemail(String semail) {
+		this.semail = semail;
 	}
-	public List<Laptop> getLaptop() {
-		return laptop;
-	}
-	public void setLaptop(List<Laptop> laptop) {
-		this.laptop = laptop; 
+	
+	@Override
+	public String toString()
+	{
+		return "Student{" + "sid=" + sid + ", sname=" + sname + ", semail=" + semail + "}";
 	}
 }
