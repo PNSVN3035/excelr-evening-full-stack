@@ -1,31 +1,32 @@
 package com.excelr.practice;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="std_table")
 public class Student 
 {
 	@Id
-	@Column(name="std_id")
 	private int sid;
 	private String sname;
 	private int smarks;
 	
-	@OneToOne
-	@JoinColumn(name="lap_id")
-	private Laptop laptop;
+	@ManyToMany(mappedBy = "stud")
+	private List<Laptop> laptop;
 		
 	public Student() {
 		super();		
 	}
 	
-	public Student(int sid, String sname, int smarks, Laptop laptop) {
+	public Student(int sid, String sname, int smarks, List<Laptop> laptop) {
 		super();
 		this.sid = sid;
 		this.sname = sname;
@@ -51,10 +52,10 @@ public class Student
 	public void setSmarks(int smarks) {
 		this.smarks = smarks;
 	}
-	public Laptop getLaptop() {
+	public List<Laptop> getLaptop() {
 		return laptop;
 	}
-	public void setLaptop(Laptop laptop) {
+	public void setLaptop(List<Laptop> laptop) {
 		this.laptop = laptop; 
 	}
 }
